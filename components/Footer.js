@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import css from "./style/footer.module.css";
+import navigationLink from "./NavigationList";
+
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -30,16 +32,14 @@ const Footer = () => {
         </div>
         <div className={css.mainMenu}>
           <div className={css.footer__heading}>Main Menu</div>
-          <ul>
-            {Array(3)
-              .fill()
-              .map((val, indx) => (
-                <li key={indx}>
-                  <Link href={""}>
-                    <a>Link</a>
-                  </Link>
-                </li>
-              ))}
+          <ul className={css.menuList}>
+            {navigationLink.map(({ name, path }, indx) => (
+              <li key={indx}>
+                <Link href={path}>
+                  <a>{name}</a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div>

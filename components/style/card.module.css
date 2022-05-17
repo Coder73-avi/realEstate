@@ -1,0 +1,44 @@
+.card {
+  height: 205px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.card:hover .cardImage {
+  opacity: 0.8;
+}
+
+.cardLocation {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 0;
+  height: 100%;
+  background: #7b65d0a8;
+  color: white;
+  overflow: hidden;
+  padding: 2rem 0;
+  transition: all 0.5s ease-in;
+}
+.card:hover .cardLocation {
+  width: 55%;
+  padding: 2rem 0.5rem;
+}
+
+.heading {
+  font-size: 14px;
+  font-weight: bolder;
+  width: 200px;
+}
+.info {
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+  width: 200px;
+}
+
+.text {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.8rem;
+  color: white;
+  font-weight: bold;
+}

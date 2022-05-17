@@ -5,158 +5,66 @@
   background-size: cover;
   height: 90vh;
 }
-
-.heading {
+.home__containt {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 42px;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 4.5%;
-  margin-bottom: 3rem;
-  color: var(--p-color);
-}
-.heading::before {
-  content: "";
-  height: 3.06px;
-  width: 117px;
-  border-radius: 7.65px;
-  background-color: var(--p-color);
-  position: absolute;
-}
-.heading::after {
-  content: "";
-  height: 3.06px;
-  width: 117px;
-  border-radius: 7.65px;
-  background-color: var(--p-color);
-  position: absolute;
-  bottom: 0;
+  align-items: center;
+  height: 90vh;
 }
 
-.service__card {
-  background-position: center;
-  background-size: cover;
-  height: 220px;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-.service__image {
-  transition: 0.3s ease-out;
-}
-.service__card:hover .service__image,
-.service__card:hover .service__card__name {
-  opacity: 0.7;
-}
-
-.service__card__name {
-  background: var(--t-color);
-  width: 50%;
-  padding: 0.8rem 1.2rem;
-  color: white;
-  text-transform: uppercase;
-  font-family: var(--m-font);
-  font-size: 14px;
-  margin-top: 3rem;
-  border-bottom-right-radius: 5rem;
-  transition: 0.4s linear;
-  border: none;
-}
-
-/* about us */
-.about__heading {
-  color: var(--p-color);
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.about__text {
-  font-size: 16px;
-  font-style: italic;
-  text-align: justify;
-  width: 80%;
-}
-.about__list {
-  list-style-image: url("../images/bullet__image.png");
-  font-size: 14px;
-  padding-left: 2rem;
-}
-
-/* contact us  */
-
-.contactForm {
-  border: 1px solid var(--s-color);
-  padding: 3rem 4rem 3rem 4rem;
-  margin-top: 5rem;
-  width: 80%;
-}
-.contactForm__heading {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--p-color);
-  margin-bottom: 1rem;
-  position: relative;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-}
-.contactForm__heading::before {
-  content: "";
-  position: absolute;
-  height: 3.06px;
-  width: 130px;
-  top: -0.2rem;
+.home__search__area {
+  border: 1px solid var(--p-color);
+  width: 500px;
   border-radius: 10px;
-  background: var(--t-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1px 0.5rem;
+  color: var(--p-color);
 }
-.contactForm__heading::after {
-  content: "";
-  position: absolute;
-  height: 3.06px;
-  width: 130px;
-  bottom: -0.2rem;
-  left: 30%;
-  border-radius: 10px;
-  background: var(--t-color);
-}
-
-.contactForm__info {
-  margin-bottom: 0.8rem;
-}
-.contactForm__info > label {
-  width: 80%;
-  text-transform: capitalize;
-  color: var(--t-color);
-  letter-spacing: 0.09rem;
-}
-.contactForm__info > input {
+.searchbox {
+  padding: 0.7rem 0.8rem;
   width: 100%;
-  border: 1px solid var(--t-color);
+  background-color: transparent;
   outline: none;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  color: var(--p-color);
-  letter-spacing: 0.09rem;
+  font-size: 16px;
 }
 
-.contactForm__btns {
-  margin-top: 1.5rem;
+.searchbox::placeholder {
+  color: var(--p-color);
 }
-.contactForm__btns > button {
-  border: 1px solid var(--s-color);
-  padding: 0.4rem 1.8rem;
-  border-radius: 2rem;
+
+.search__btn {
+  color: var(--p-color);
+}
+.search__btn:hover {
+  color: red;
   cursor: pointer;
-  color: var(--p-color);
-  transition: 0.2s ease-in;
-  letter-spacing: 0.08rem;
-}
-.contactForm__btns > button:hover {
-  background-color: var(--s-color);
-  border-color: var(--t-color);
-  color: white;
 }
 
-.contact__image {
-  border-radius: 50% 50% 50% 0;
+.home__containt > p {
+  font-family: var(--f-font);
+  font-size: 32px;
+  color: var(--p-color);
+}
+.home__containt > p > span {
+  color: red;
+}
+.contact__btn {
+  padding: 0.8rem;
+  color: var(--p-color);
+  border: 1px solid var(--p-color);
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-weight: bolder;
+  transition: all 0.3s ease-in;
+}
+.contact__btn:hover {
+  color: white;
+  background: var(--p-color);
+  font-weight: 400;
 }

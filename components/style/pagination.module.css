@@ -1,0 +1,31 @@
+.pagination {
+  border: 1px solid var(--t-color);
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0.1rem 2rem 3rem 2rem;
+  width: 50%;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.circle__border,
+.active {
+  border: 1px solid var(--t-color);
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--t-color);
+  transition: all 0.3s linear;
+}
+.circle__border:hover,
+.active {
+  color: white;
+  background: var(--t-color);
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+/* about us */
+.about__heading {
+  color: var(--p-color);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about__text {
+  font-size: 16px;
+  font-style: italic;
+  text-align: justify;
+  width: 80%;
+}
+.about__list {
+  list-style-image: url("../images/bullet__image.png");
+  font-size: 14px;
+  padding-left: 2rem;
+}

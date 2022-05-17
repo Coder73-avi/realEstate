@@ -1,0 +1,77 @@
+/* contact us  */
+
+.contactForm {
+  border: 1px solid var(--s-color);
+  padding: 3rem 4rem 3rem 4rem;
+  margin-top: 5rem;
+  width: 80%;
+}
+.contactForm__heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--p-color);
+  margin-bottom: 1rem;
+  position: relative;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.contactForm__heading::before {
+  content: "";
+  position: absolute;
+  height: 3.06px;
+  width: 130px;
+  top: -0.2rem;
+  border-radius: 10px;
+  background: var(--t-color);
+}
+.contactForm__heading::after {
+  content: "";
+  position: absolute;
+  height: 3.06px;
+  width: 130px;
+  bottom: -0.2rem;
+  left: 30%;
+  border-radius: 10px;
+  background: var(--t-color);
+}
+
+.contactForm__info {
+  margin-bottom: 0.8rem;
+}
+.contactForm__info > label {
+  width: 80%;
+  text-transform: capitalize;
+  color: var(--t-color);
+  letter-spacing: 0.09rem;
+}
+.contactForm__info > input {
+  width: 100%;
+  border: 1px solid var(--t-color);
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: var(--p-color);
+  letter-spacing: 0.09rem;
+}
+
+.contactForm__btns {
+  margin-top: 1.5rem;
+}
+.contactForm__btns > button {
+  border: 1px solid var(--s-color);
+  padding: 0.4rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--p-color);
+  transition: 0.2s ease-in;
+  letter-spacing: 0.08rem;
+}
+.contactForm__btns > button:hover {
+  background-color: var(--s-color);
+  border-color: var(--t-color);
+  color: white;
+}
+
+.contact__image {
+  border-radius: 50% 50% 50% 0;
+}

@@ -1,41 +1,96 @@
-
-.navigation{
-    background: #312172;
-    display: flex;
-    /* gap:2rem; */
-    padding:1.2rem;
-    padding-bottom: 1.25rem;
-    position: relative;
-    z-index: 1;
+.navigation {
+  background: #312172;
+  /* gap:2rem; */
+  padding: 1.2rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition-duration: 2s;
 }
-.navigation::before{
-    content: "";
-    background:#5B4B9E;
-    height: 4px;
-    position:absolute;
-    width:100%;
-    left:0;
-    bottom:0;
-    z-index: 2;
+.navigation::before {
+  content: "";
+  background: #5b4b9e;
+  height: 4px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
 }
-
-.nav__link{
-    color:white;
-    padding:1rem 1.3rem;
-    transition: .2s ease-in all;
-}
-.nav__link:hover{
-    color:var(--t-color)
+.nav__fixed {
+  position: fixed;
+  z-index: 90;
 }
 
-.nav__btn > a{
-    background:var(--s-color);
-    padding:.6rem 1rem;
-    margin-left: 1rem;
-    color:white;
-    font-weight: bold;
-    border-radius: 9px;
+.nav__link {
+  color: white;
+  padding: 1rem 1.3rem;
+  transition: 0.2s ease-in all;
 }
-.nav__btn > a:hover{
-    opacity: .7;
+.nav__link:hover {
+  color: var(--t-color);
+}
+
+.nav__btn > a {
+  background: var(--s-color);
+  padding: 0.6rem 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.nav__btn > a:hover {
+  opacity: 0.7;
+}
+
+/* buttom to top */
+.buttom__to__top::before {
+  content: "";
+  position: absolute;
+  border: 1px solid red;
+  border-bottom: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: rotate .6s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 50% {
+    transform: rotate(180deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttom__to__top {
+  background-color: transparent;
+  color: red;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
+}
+.up__btn_show {
+  display: flex;
+}
+
+.buttom__to__top:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  color: white;
+  background: red;
 }

@@ -1,11 +1,26 @@
 .footer {
+  /* width: 100%; */
   background-color: var(--t-color);
   font-family: var(--f-font);
   color: white;
+  margin-top:auto;
 }
 
 .footer__heading {
   font-size: 24px;
+}
+
+.menuList {
+  padding-left: 0.5rem;
+}
+.menuList > li {
+  font-family: var(--m-font);
+  font-weight: 400;
+  letter-spacing: 0.09rem;
+}
+.menuList > li:hover {
+  text-decoration: underline;
+  color: red;
 }
 
 .social__icons {
