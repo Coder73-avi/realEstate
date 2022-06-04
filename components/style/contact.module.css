@@ -41,12 +41,12 @@
 .contactForm__info > label {
   width: 80%;
   text-transform: capitalize;
-  color: var(--t-color);
+  color: var(--s-color);
   letter-spacing: 0.09rem;
 }
 .contactForm__info > input {
   width: 100%;
-  border: 1px solid var(--t-color);
+  border: 1px solid var(--s-color);
   outline: none;
   padding: 0.4rem 0.8rem;
   font-size: 0.9rem;

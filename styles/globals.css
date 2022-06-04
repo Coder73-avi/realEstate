@@ -4,7 +4,7 @@
 /* import font */
 
 :root {
-  --t-color: #7a65d0;
+  --t-color: rgba(255, 0, 0, 0.87);
   --s-color: #5842af;
   --p-color: #312172;
   --p-font: "Poppins", sans-serif;
@@ -51,17 +51,56 @@ a {
 .heading::before {
   content: "";
   height: 3.06px;
-  width: 117px;
+  width: 125px;
   border-radius: 7.65px;
   background-color: var(--p-color);
   position: absolute;
+  margin-left: -6rem;
 }
 .heading::after {
   content: "";
   height: 3.06px;
-  width: 117px;
+  width: 125px;
   border-radius: 7.65px;
-  background-color: var(--p-color);
+  background-color: var(--t-color);
   position: absolute;
+  margin-left: 6rem;
   bottom: 0;
+}
+
+/* loading */
+.loading__wrapper {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #312172;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading__wrapper span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #5842af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading__wrapper span {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
 }

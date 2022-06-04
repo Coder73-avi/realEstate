@@ -1,9 +1,9 @@
 .footer {
   /* width: 100%; */
-  background-color: var(--t-color);
+  background-color: var(--s-color);
   font-family: var(--f-font);
   color: white;
-  margin-top:auto;
+  margin-top: auto;
 }
 
 .footer__heading {

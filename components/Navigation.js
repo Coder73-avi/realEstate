@@ -1,6 +1,8 @@
 import Link from "next/link";
 import css from "./style/navigation.module.css";
 import navigationLink from "./NavigationList";
+import NextNProgress from "nextjs-progressbar";
+
 // import images
 
 // icons
@@ -73,6 +75,7 @@ export default function Navigation() {
             <a>Sign In</a>
           </Link>
         </div>
+        <NextNProgress color="red" nonce="my-nonce" />
       </nav>
       <div
         className={css.buttom__to__top + ` ${upArrow && css.up__btn_show}`}

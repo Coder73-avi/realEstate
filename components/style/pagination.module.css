@@ -1,5 +1,5 @@
 .pagination {
-  border: 1px solid var(--t-color);
+  border: 1px solid var(--s-color);
   height: 53px;
   display: flex;
   flex-direction: row;
@@ -12,7 +12,7 @@
 }
 .circle__border,
 .active {
-  border: 1px solid var(--t-color);
+  border: 1px solid var(--s-color);
   width: 32px;
   height: 32px;
   font-size: 14px;
@@ -20,12 +20,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--t-color);
+  color: var(--s-color);
   transition: all 0.3s linear;
 }
 .circle__border:hover,
 .active {
   color: white;
-  background: var(--t-color);
+  background: var(--s-color);
   cursor: pointer;
 }
